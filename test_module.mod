@@ -1,2 +1,2 @@
-/home/pi/Desktop/test_module.o
+/home/pi/Desktop/Test_Module/test_module.o
 
