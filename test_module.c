@@ -34,7 +34,7 @@ struct file_operations test_module_operations = {
 int test_module_init(void){
 	printk(KERN_ALERT "Inside the %s function\n", __FUNCTION__);
 	
-	register_chrdev(935/* major num */,
+	register_chrdev(222/* major num */,
 			"Test Char Dev" /* name */,
 			&test_module_operations /* file operations */);
 
@@ -43,7 +43,7 @@ int test_module_init(void){
 
 void test_module_exit(void){
 	printk(KERN_ALERT "Inside the %s function\n", __FUNCTION__);
-	unregister_chrdev(935,"Test Char Dev");
+	unregister_chrdev(222,"Test Char Dev");
 }
 
 module_init(test_module_init);
