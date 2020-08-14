@@ -1,4 +1,4 @@
-main_mod_name = test_module
+main_mod_name = oled_module
 obj-m := $(main_mod_name).o
 
 all:
